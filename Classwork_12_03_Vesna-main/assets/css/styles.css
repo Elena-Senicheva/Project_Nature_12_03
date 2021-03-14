@@ -1,0 +1,276 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Open Sans", arial, sans-serif;
+  background-color: #f7f7f7;
+  color: #373737;
+}
+
+.header {
+  display: flex;
+  flex-wrap:wrap;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+  position: fixed;
+  top: 0;
+  right: 0;
+  left: 0;
+
+  background-color: white;
+  color: black;
+  -webkit-box-shadow: 0px 12px 8px -6px rgba(0, 0, 0, 0.59);
+  -moz-box-shadow: 0px 12px 8px -6px rgba(0, 0, 0, 0.59);
+  box-shadow: 0px 10px 6px -9px rgba(0, 0, 0, 0.05);
+}
+
+span {
+  display: inline-block;
+  text-align: center;
+  padding: 10px;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  color: white;
+  }
+
+span:nth-child(2n + 1) {
+  background-color: #ef5a42;
+}
+span:nth-child(2n) {
+  background-color: #f8b763;
+}
+
+.logo {
+  margin-right: 240px;
+}
+
+nav > ul > li {
+  display: inline-block;
+}
+
+.nav-list > li > a {
+  text-decoration: none;
+  color: inherit;
+  padding-left: 50px;
+  text-transform: uppercase;
+  font-family: sans-serif;
+  font-size: 0.9rem;
+  transition-property: color;
+  transition-duration: 1s;
+}
+
+.nav-list > li > a:hover{
+  color:orangered;
+  
+}
+
+input[type="search"] {
+  padding: 10px;
+  margin-left: 60px;
+  width: 150px;
+  border: none;
+  font-size: 0.8rem;
+  font-family: cursive;
+  background-image: url("../icons/magnify.svg");
+  background-repeat: no-repeat;
+  background-position: right;
+  
+}
+input[type="search"]:focus {
+  border: 1px solid grey;
+  transition-duration: 1s;
+}
+
+main {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  margin: 0 auto;
+  margin-top: 80px;
+  padding: 20px 20px;
+  font-size: 1rem;
+  line-height: 1.5em;
+  flex: 1;
+}
+
+article {
+  padding: 20px;
+  margin-right: 50px;
+  max-width: 600px;
+}
+
+.img-article {
+  width: 600px;
+  height: 400px;
+  margin-bottom: 20px;
+}
+
+.link-article {
+  display: inline-block;
+  margin-bottom: 10px;
+  color: orange;
+  text-decoration: none;
+  text-transform: uppercase;
+  font-size: 0.8rem;
+}
+
+.heading-article {
+  font-size: 1.6rem;
+  margin-bottom: 10px;
+  text-transform: capitalize;
+}
+
+p{
+  text-align:left;
+  width: 600px;
+  font-size: 0.9rem;
+}
+
+.button{
+  width:600px;
+  margin-top: 20px;
+  border-bottom: 1px solid rgb(179, 175, 175, 0.3);
+  border-top: 1px solid rgb(179, 175, 175, 0.3);
+}
+
+.btn {
+  position: relative;
+  padding: 18px 18px;
+  margin-right: 350px;
+  font-size: 10px;
+  border: none;
+  background-color:#3c3d41;
+  color: white;
+}
+
+
+aside {
+  margin-top: 20px;
+  
+}
+
+.article-aside {
+  margin-bottom: 30px;
+  background-color: white;
+  -webkit-box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.1);
+  -moz-box-shadow: 4px 4px 0px 0px rgba(0, 0, 0, 0.1);
+  box-shadow: 3px 3px 0px 0px rgba(0, 0, 0, 0.05);
+}
+
+h2 {
+  border: 1px solid orange;
+  -webkit-box-shadow: 6px 4px 0px 2px rgba(231, 166, 26, 0.67);
+  -moz-box-shadow: 6px 4px 0px 2px rgba(231, 166, 26, 0.67);
+  box-shadow: 3px 2px 0px 1px rgba(231, 166, 26, 0.67);
+  padding: 10px 50px;
+  margin-bottom: 10px;
+  font-size: 1.2rem;
+  text-align: center;
+}
+
+.link-aside {
+  text-decoration: none;
+  color: inherit;
+  position: relative;
+  font-size: 0.8rem;
+}
+
+.link-aside::before {
+  content: ">";
+  position: absolute;
+  left: -15px;
+  font-size: 0.7rem;
+  color: rgb(179, 175, 175, 0.8);
+}
+
+.link-aside::after {
+  content: "(2)";
+  position: absolute;
+  right: -25px;
+  font-size: 0.8rem;
+  color: rgb(179, 175, 175, 0.8);
+}
+
+.article-aside > ul > li+li{
+  border-top: 1px solid rgb(179, 175, 175, 0.8);
+  }
+
+  .article-aside> ul Li{
+    padding: 15px  0 15px;
+  }
+
+.img-aside{
+width: 80px;
+height: 50px;
+}
+
+.img1{
+  position: relative;
+}
+
+.img1::after{
+position: absolute;
+content: "Весна";
+right: -55px;
+color: rgb(179, 175, 175, 0.8);
+font-size: 0.9rem;
+}
+
+.img2{
+  position: relative;
+}
+
+.img2::after{
+position: absolute;
+content: "  Лето";
+right: -50px;
+color: rgb(179, 175, 175, 0.8);
+font-size: 0.9rem;
+}
+
+.img3{
+  position: relative;
+}
+
+.img3::after{
+position: absolute;
+content: "Осень";
+right: -55px;
+color: rgb(179, 175, 175, 0.8);
+font-size: 0.9rem;
+}
+
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+  align-items: center;
+  padding: 30px;
+  background-color: #3c3d41;
+  color: white;
+  
+}
+
+footer a{
+  text-decoration: none;
+  color: inherit;
+  }
+
+  footer a+a{
+   margin-left:20px;
+   }
+
+   
+   @media all and (max-width:710px){
+    .nav-list{display: none;}
+     }
+
+  @media all and (max-width:1065px){
+      aside{ 
+        width: 100%;}
+       }
+
